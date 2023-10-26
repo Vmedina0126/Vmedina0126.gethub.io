@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <link
+      href="../css/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="../css/bootstrap-5.2.3-dist/js/popper.min.js"></script>
+    <script src="../css/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-dark">
+    <h1 class="text-primary">Inmogestón S.A</h1>
+
+    <div class="container p-2">
+      <div
+        class="card mx-3 mt-n5 shadow-lg"
+        style="
+          border-radius: 10px;
+          border-left: 8px #007bff solid;
+          border-right: none;
+          border-top: none;
+          border-bottom: none;
+        "
+      >
+        <div class="card-body">
+          <form
+            action=""
+            name="fcontact"
+            onsubmit="contactos(event)"
+            target="_self"
+            method="get"
+          >
+            <h2 class="text-primary text-uppercase fst-italic mb-3 ms-3">
+              formulario de contacto
+            </h2>
+
+            <div class="row">
+              <div class="col">
+                <label for="fname" class="form-label">Nombre</label>
+                <input type="text" name="" id="fname" class="form-control" />
+              </div>
+
+              <div class="col">
+                <label for="fLname" class="form-label">Apellidos</label>
+                <input type="text" name="" id="fLname" class="form-control" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="fphone" class="form-label"
+                  >Numero de telefono</label
+                >
+                <input type="text" name="" id="fphone" class="form-control" />
+              </div>
+
+              <div class="col">
+                <label for="fcorreo" class="form-label">Email</label>
+                <input type="text" name="" id="fcorreo" class="form-control" />
+              </div>
+
+              <div class="col">
+                <label for="Fcountry" class="form-label">Pais</label>
+                <input type="text" name="" id="Fcountry" class="form-control" />
+              </div>
+
+              <div class="col">
+                <label for="fcity" class="form-label">Ciudad</label>
+                <input type="text" name="" id="fcity" class="form-control" />
+              </div>
+            </div>
+            <br />
+
+            <button
+              class="btn btn-primary fw-bolder"
+              style="border-radius: 4px"
+              ;
+              type="submit"
+            >
+              Guardar
+            </button>
+            <br />
+          </form>
+          <br />
+          <button
+            class="btn btn-primary fw-bolder"
+            style="border-radius: 4px"
+            type="submit"
+            onclick="window.location.href='../index.html'"
+          >
+            Atras
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/Contactos.js"></script>
+  </body>
+</html>
